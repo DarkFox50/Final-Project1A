@@ -43,7 +43,6 @@ public class Login extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         username = new javax.swing.JTextField();
@@ -53,6 +52,8 @@ public class Login extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         login = new javax.swing.JButton();
         password = new javax.swing.JPasswordField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -79,134 +80,92 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(167, 248, 79));
 
-        jPanel1.setBackground(new java.awt.Color(0, 255, 0));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(102, 102, 102));
+        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("**Description: CropBuddy - Nurturing Agriculture through Expert Farm Management**\n\nWelcome to CropBuddy, where agriculture is more than just a livelihood; it's a legacy we help you build. With an unwavering dedication to cultivating success, we offer a comprehensive suite of services designed to optimize every aspect of farm operations.\n\n**Our Vision:** Cultivating Growth, Harvesting Prosperity\n\n**About Us:**\nAt CropBuddy, we are driven by a mission to redefine the landscape of modern farming. We recognize that agriculture is the cornerstone of communities and economies. With this understanding, we blend innovative strategies, cutting-edge technology, and years of industry experience to empower farmers to reach new heights of success.\n\n**Services:**\n1. **Operational Excellence:** Our team of experienced agronomists and farm management specialists partners with each client to create customized plans that enhance efficiency, minimize waste, and optimize resource utilization. From selecting the right crops to refining harvesting practices, we fine-tune every process for optimal outcomes.\n\n2. **Financial Precision:** We understand the financial complexities farmers face. Our financial advisors provide expert insights on budget management, cost analysis, pricing strategies, and risk mitigation. Our aim is to ensure that every decision leads to abundant harvests and robust financial health.\n\n3. **Technology Integration:** Embracing cutting-edge technology is key to sustainable farming. We introduce precision agriculture tools, IoT devices, data analytics, and automation to boost productivity and resource management. From aerial drone monitoring to predictive analytics, we equip farmers with actionable intelligence.\n\n4. **Sustainability Solutions:** At CropBuddy, we're committed to fostering environmental stewardship alongside bountiful yields. Our sustainability experts assist in adopting eco-conscious practices, such as organic farming, integrated pest management, and soil rejuvenation, creating resilient ecosystems and premium produce.\n\n5. **Market Access:** Navigating dynamic markets can be daunting. We offer market trend analysis, supply chain optimization, and marketing strategies that connect farmers with discerning buyers. This ensures equitable returns on investment and nurtures enduring partnerships.\n\n**Why Choose CropBuddy?**\n- **Holistic Philosophy:** We approach farm management holistically, considering economic, social, and environmental factors alongside agricultural practices.\n- **Expert Ensemble:** Our team comprises agricultural specialists, tech enthusiasts, financial advisors, and sustainability advocates collaborating to deliver comprehensive solutions.\n- **Innovation Central:** We stay at the forefront of agricultural innovation, continuously seeking novel ways to drive growth, enhance sustainability, and adapt to industry shifts.\n- **Tailored to You:** Each farm has a unique story. We invest time in understanding your goals and challenges, crafting personalized strategies that align with your aspirations.\n- **Results that Count:** Our achievements are measured by your successes. We're dedicated to achieving tangible, measurable advancements in farm performance and profitability.\n\nEmbark on a transformative journey with CropBuddy. Discover the immense potential of expert guidance, technological prowess, and sustainable values. Together, we sow the seeds of a thriving future, not only for crops but also for the essence of agriculture and the communities it nurtures.");
         jTextArea1.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextArea1);
 
-        jLabel6.setFont(new java.awt.Font("The Bold Font", 0, 36)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 179, 1));
-        jLabel6.setText("Cropbuddy");
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 183, 370, 310));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(744, 0, -1, 6));
 
-        jPanel2.setBackground(new java.awt.Color(102, 255, 0));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Password");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 228, 93, 16));
 
+        username.setBackground(new java.awt.Color(255, 255, 255));
         username.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        username.setForeground(new java.awt.Color(0, 0, 0));
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
             }
         });
+        jPanel2.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 188, 95, 22));
 
         jLabel1.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Username");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 159, 93, -1));
 
         jLabel3.setFont(new java.awt.Font("The Bold Font", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 179, 1));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Login");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 105, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Don't Have A Account ?");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 348, -1, 40));
 
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setText("Register");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 352, 87, 34));
 
+        login.setBackground(new java.awt.Color(255, 255, 255));
         login.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        login.setForeground(new java.awt.Color(0, 0, 0));
         login.setText("Login");
         login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginActionPerformed(evt);
             }
         });
+        jPanel2.add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 290, -1, -1));
 
+        password.setBackground(new java.awt.Color(255, 255, 255));
         password.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        password.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 250, 93, 22));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(login)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(73, 73, 73)))
-                .addContainerGap(61, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(105, 105, 105)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(login)
-                .addGap(30, 30, 30)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cropbuddy/login (1).jpg"))); // NOI18N
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 340, 440));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(jLabel6))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel5))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(12, 12, 12)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 0, 340, 490));
+
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cropbuddy/CropBuddy__1___1_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 200, 170));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -329,6 +288,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;

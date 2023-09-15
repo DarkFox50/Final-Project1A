@@ -39,6 +39,7 @@ public class Dasboard extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -93,19 +94,26 @@ public class Dasboard extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel7.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, 128, 38));
+        jPanel7.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 150, 38));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setFont(new java.awt.Font("Thunder", 0, 21)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Search Product");
+        jButton2.setText("Crop Management");
         jButton2.setBorderPainted(false);
-        jPanel7.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, -1, 38));
+        jPanel7.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 150, 38));
 
         jLabel2.setFont(new java.awt.Font("The Bold Font", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Welcome user");
         jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 275, 50));
+
+        jButton5.setBackground(new java.awt.Color(0, 0, 0));
+        jButton5.setFont(new java.awt.Font("Thunder", 0, 21)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Search Product");
+        jButton5.setBorderPainted(false);
+        jPanel7.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 150, 38));
 
         jTabbedPane2.addTab("tab1", jPanel7);
 
@@ -204,6 +212,7 @@ public class Dasboard extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel2;
